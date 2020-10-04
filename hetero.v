@@ -297,5 +297,5 @@ Theorem card_difference : forall {A} (H : Finite A) (x : nat) (y : A), A <> nat.
   by apply : infinite_nat_absurd.
 Qed.
 
-Theorem Univalence : forall {A} (H : Finite A) (x : nat) (y : A), (A = nat) ~ (A ~ nat).
-  
+Theorem Uni : forall {A} (H : Finite A) (x : nat) (y : A), (A = nat) ~ (A ~ nat) -> False.
+Admitted.
